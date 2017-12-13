@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="XACT" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../sc0-xact-d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lsc0-utility-d" />
+					<Add option="-lsfml-system-s-d" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="../sc0-xact" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lsc0-utility" />
+					<Add option="-lsfml-system-s" />
+				</Linker>
+			</Target>
+			<Target title="Test Debug">
+				<Option output="../XACT" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lsc0-utility-d" />
+					<Add option="-lsfml-audio-s-d" />
+					<Add option="-lsfml-system-s-d" />
+					<Add option="-lopenal32" />
+					<Add option="-lflac" />
+					<Add option="-lvorbisenc" />
+					<Add option="-lvorbisfile" />
+					<Add option="-lvorbis" />
+					<Add option="-logg" />
+					<Add option="-lwinmm" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DSFML_STATIC" />
+		</Compiler>
+		<Unit filename="main.cpp">
+			<Option target="Test Debug" />
+		</Unit>
+		<Unit filename="xact/PrivateUtil.cpp" />
+		<Unit filename="xact/PrivateUtil.hpp" />
+		<Unit filename="xact/Sound.cpp" />
+		<Unit filename="xact/Sound.hpp" />
+		<Unit filename="xact/SoundBank.cpp" />
+		<Unit filename="xact/SoundBank.hpp" />
+		<Unit filename="xact/WaveBank.cpp" />
+		<Unit filename="xact/WaveBank.hpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,9 @@
+*.a
+*.txt
+*.dll
+*.exe
+*.wav
+obj
+*.depend
+*.layout
+

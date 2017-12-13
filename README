@@ -1,0 +1,5 @@
+A C++ library to read XNA sound banks and wave banks.
+
+I'm writing this for a Stardew Valley project, so this project lacks things (such as the compact format) not present in that game.
+
+Currently stuck on decoding the wave data. There's a bunch of noise and stuff in the decoded samples.
